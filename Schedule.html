@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule - Event WebPage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h3>Schedulepage</h3>
+    <div class="header">
+        <h1>Welcome to Event WebPage</h1>
+        <h3><i>Design the Future</i></h3>
+    </div>
+
+    <div class="nav">
+        <a href="Home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="container">
+        
+        <h2>SCHEDULE</h2>
+        <table>
+            <tr>
+                <th>Time</th>
+                <th>Topic</th>
+                <th>Speaker</th>
+            </tr>
+            <tr>
+                <td class="time" data-topic="Welcome Notes">9:00 AM</td>
+                <td>Welcome Notes</td>
+                <td>Guna</td>
+            </tr>
+            <tr>
+                <td class="time" data-topic="Event Offers">10:00 AM</td>
+                <td>Event Offers</td>
+                <td>Tamil</td>
+            </tr>
+            <tr>
+                <td class="time" data-topic="Budget">11:00 AM</td>
+                <td>Budget</td>
+                <td>Mahi</td>
+            </tr>
+            <tr>
+                <td class="time" data-topic="Vote of Thanks">12:00 PM</td>
+                <td>Vote of Thanks</td>
+                <td>Vasanth</td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        document.querySelectorAll('.time').forEach(item => {
+            item.addEventListener('click', function() {
+                alert("Topic: " + this.getAttribute("data-topic"));
+            });
+        });
+    </script>
+
+</body>
+</html>

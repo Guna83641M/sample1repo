@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Event WebPage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Contactpage</h1>
+    <div class="header">
+        <h1>Welcome to Event WebPage</h1>
+        <h3><i>Design the Future</i></h3>
+    </div>
+
+    <div class="nav">
+        <a href="Home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="container">
+        <h2>CONTACT</h2>
+        <p>
+            <b>Dreamindia PVT ltd<br>
+            296/1,2nd Street,
+           New Colony,<br>
+           Chennai - 40</b>
+        </p>
+
+        <h2>FEEDBACK</h2>
+        <form id="feedbackForm">
+            Name: <input type="text" required><br><br>
+            Email: <input type="email" required><br><br>
+            Phone No: <input type="tel" required><br><br>
+            Comments: <textarea required></textarea><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Details submitted successfully!');
+        });
+    </script>
+
+</body>
+</html>
